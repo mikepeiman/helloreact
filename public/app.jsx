@@ -12,7 +12,7 @@ var Greeting = React.createClass({
 		return (
 			<div>
 				<h1>RelationshipIQ</h1>
-				<p>Hello { name }{ message }</p>
+				<p>Hello { name }{ message + '!!!'}</p>
 			</div>
 			);
 	}
