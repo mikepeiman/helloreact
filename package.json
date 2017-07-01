@@ -9,6 +9,7 @@
   "author": "Mike Peiman",
   "license": "MIT",
   "dependencies": {
+    "bulma": "^0.4.2",
     "express": "^4.15.3"
   }
 }
