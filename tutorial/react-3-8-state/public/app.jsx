@@ -1,8 +1,8 @@
 var Greeter = React.createClass({
   getDefaultProps: function () {
     return {
-      name: 'Mike',
-      greeting: 'Welcome to RelationshipIQ Default message!'
+      name: 'React',
+      message: 'This is the default message!'
     };
   },
   getInitialState: function () {
@@ -25,12 +25,12 @@ var Greeter = React.createClass({
   },
   render: function () {
     var name = this.state.name;
-    var greeting = this.props.greeting;
+    var message = this.props.message;
 
     return (
       <div>
         <h1>Hello {name}!</h1>
-        <p>{greeting + '!!'}</p>
+        <p>{message + '!!'}</p>
 
         <form onSubmit={this.onButtonClick}>
           <input type="text" ref="name"/>
@@ -41,10 +41,9 @@ var Greeter = React.createClass({
   }
 });
 
-var firstName = 'Michael';
-var message = "Yo yo yo";
+var firstName = 'Andrew';
 
 ReactDOM.render(
-  <Greeter name={firstName} greeting={message} />,
+  <Greeter name={firstName}/>,
   document.getElementById('app')
 );
